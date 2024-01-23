@@ -1,4 +1,3 @@
-import Principal from './src/Login';
 import { NativeBaseProvider, StatusBar } from 'native-base';
 
 import { TEMAS } from './src/estilos/Temas';
