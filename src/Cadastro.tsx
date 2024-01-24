@@ -1,13 +1,13 @@
 import { VStack, Image, Text, Box, Link, Checkbox, ScrollView } from 'native-base'
 import { useState } from 'react';
 import { TouchableOpacity } from 'react-native';
-import logo2 from './assets/logo2.png';
+import logo2 from './assets/logo2.png'
 import { Botao } from './componentes/Botao';
 import { EntradaTexto } from './componentes/EntradaTexto';
 import { Titulo } from './componentes/Titulo';
 import { secoes } from './utils/CadastroEntradaTexto';
 
-export default function Login() {
+export default function Cadastro() {
   const [numSecao, setNumSecao] = useState(0);
   
 
@@ -24,8 +24,8 @@ export default function Login() {
   }
 
   return (
-    <ScrollView flex={1} p={5}  >
-      <Image source={logo2} alt="MelPhysio2" alignSelf="center" mt={20}/>
+    <ScrollView flex={1} p={5}>
+      <Image source={logo2} alt="MelPhysio2" alignSelf="center" />
 
       <Titulo>
         {secoes[numSecao].titulo}
@@ -39,7 +39,7 @@ export default function Login() {
       </Box>
       <Box>
         <Text color="blue.800" fontWeight="bold" fontSize="md" mt="2" mb={2}>
-          Opções de pagamento:
+          Selecione o plano:
         </Text>
         {
           secoes[numSecao].checkbox.map(checkbox => {
