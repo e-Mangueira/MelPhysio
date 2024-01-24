@@ -1,14 +1,13 @@
 import { VStack, Image, Text, Box, FormControl, Input,
 Button, Link } from 'native-base'
-import LogoVertical_1 from './assets/logoVertical_1.png'
+import logo1 from './assets/logo1.png';
 import { TouchableOpacity } from 'react-native';
 import { Titulo } from './componentes/Titulo';
 
 export default function Login() {
   return (
     <VStack flex={1} alignItems="center" justifyContent="center" p={5}>
-      <Image source={LogoVertical_1} alt="
-      Logo MelPhysio1" />
+      <Image source={logo1} alt="MelPhysio1" />
 
       <Titulo>
         Faça login em sua conta
